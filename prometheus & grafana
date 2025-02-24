@@ -1,1 +1,79 @@
+Metrics vs Monitoring
+
+🔹 What are Metrics?
+
+Metrics are measurements or data points that provide information about a system’s performance.
+
+✅ Examples of metrics:
+
+CPU usage
+
+Memory consumption
+
+Network traffic
+
+Number of requests per second
+
+Metrics help track what is happening in a system at any given time.
+
+
+🔹 What is Monitoring?
+
+Monitoring is the continuous process of observing metrics over time to detect trends, anomalies, and failures.
+
+✅ Monitoring involves:
+
+Collecting and storing metrics
+
+Setting thresholds for alerts
+
+Analyzing trends for better decision-making
+
+📌 Example: Tracking CPU usage daily is a metric, but setting an alert when CPU usage goes above 80% is monitoring.
+
+
+What is Prometheus?
+
+🔹 Prometheus is an open-source monitoring system that collects metrics from different sources and stores them in a time-series database.
+
+Key Features:
+
+✅ Collects real-time metrics from servers, applications, and Kubernetes clusters.
+✅ Stores data in a time-series format (with timestamps).
+✅ Provides a query language (PromQL) to retrieve and analyze data.
+✅ Sends alerts using Alertmanager when specific conditions are met.
+✅ Works efficiently in Kubernetes environments.
+
+How It Works?
+
+1️⃣ Scrapes metrics from various sources via HTTP endpoints.\
+2️⃣ Stores metrics in its database.
+3️⃣ Analyzes data using PromQL.
+4️⃣ Triggers alerts based on predefined rules.
+
+📌 Example: Prometheus can track CPU usage of a Kubernetes pod and send an alert if it exceeds a limit.
+
+
+What is Grafana?
+
+🔹 Grafana is an open-source visualization tool used to create dashboards for analyzing metrics and logs.
+
+Key Features:
+
+✅ Connects with multiple data sources (Prometheus, InfluxDB, MySQL, etc.).
+✅ Provides real-time dashboards for monitoring system health.
+✅ Allows custom alerts via email, Slack, and other tools.
+✅ Supports role-based access control (RBAC) for security.
+✅ Helps in troubleshooting and capacity planning.
+
+How It Works?
+
+1️⃣ Connects to a data source (e.g., Prometheus).
+2️⃣ Fetches metrics and visualizes data as graphs, charts, and tables.
+3️⃣ Helps in real-time monitoring and trend analysis.
+
+📌 Example: If Prometheus collects CPU usage metrics, Grafana can display a graph of CPU usage over time.
+
+Prometheus Architecture:
+
 
